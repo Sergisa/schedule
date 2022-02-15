@@ -1,0 +1,26 @@
+<div ng-if="useCreationPopup" class="lnb-new-schedule">
+    <button id="btn-new-schedule" class="mdl-button mdl-js-button mdl-button--primary" data-toggle="modal">
+        <i class="material-icons">add</i>
+        добавить
+    </button>
+</div>
+<div id="lnb-calendars" class="lnb-calendars">
+    <div>
+        <div class="lnb-calendars-item">
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect mdl-typography--font-thin" for="view-all">
+                <input type="checkbox" value="all" class="mdl-checkbox__input" id="view-all" checked>
+                <span class="mdl-checkbox__label">Все календари</span>
+            </label>
+        </div>
+    </div>
+    <div id="calendarList" class="lnb-calendars-d1">
+        <calendar-list></calendar-list>
+    </div>
+    <div>
+        <button class="mdl-button mdl-js-button mdl-button--primary" id="authorize_button">Login</button>
+        <button class="mdl-button mdl-js-button mdl-button--primary" id="signout_button" disabled>Sign out</button>
+    </div>
+</div>
+<div class="lnb-footer">
+    © Sergisa
+</div>
