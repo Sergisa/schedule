@@ -1,0 +1,431 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 12px;
+}
+
+/**  custom bootstrap - start */
+.btn {
+    border-radius: 25px;
+    border-color: #ddd;
+}
+
+.btn:hover {
+    border: solid 1px #bbb;
+    background-color: #fff;
+}
+
+.btn:active {
+    background-color: #f9f9f9;
+    border: solid 1px #bbb;
+    outline: none;
+}
+
+.btn:disabled {
+    background-color: #f9f9f9;
+    border: solid 1px #ddd;
+    color: #bbb;
+}
+
+.btn:focus:active, .btn:focus, .btn:active {
+    outline: none;
+}
+
+.open > .dropdown-toggle.btn-default {
+    background-color: #fff;
+}
+
+.dropdown-menu {
+    top: 25px;
+    padding: 3px 0;
+    border-radius: 2px;
+    border: 1px solid #bbb;
+}
+
+.dropdown-menu > li > a {
+    padding: 9px 12px;
+    cursor: pointer;
+}
+
+.dropdown-menu > li > a:hover {
+    background-color: rgba(81, 92, 230, 0.05);
+    color: #333;
+}
+
+.bi15 {
+    width: 15px;
+    height: 15px;
+}
+
+/** custom fontawesome - end */
+
+.calendar-icon {
+    width: 14px;
+    height: 14px;
+}
+
+#top {
+    height: 49px;
+    border-bottom: 1px solid #bbb;
+    padding: 16px;
+    font-size: 10px;
+}
+
+#lnb {
+    position: absolute;
+    width: 200px;
+    top: 0;
+    bottom: 0;
+    border-right: 1px solid #d5d5d5;
+    padding: 12px 10px;
+    background: #f1f3f4;
+}
+
+#right {
+    position: absolute;
+    left: 200px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#lnb label {
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.lnb-new-schedule {
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.lnb-new-schedule-btn {
+    height: 100%;
+    font-size: 14px;
+    background-color: #ff6618;
+    color: #ffffff;
+    border: 0;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.lnb-new-schedule-btn:hover {
+    height: 100%;
+    font-size: 14px;
+    background-color: #e55b15;
+    color: #ffffff;
+    border: 0;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.lnb-new-schedule-btn:active {
+    height: 100%;
+    font-size: 14px;
+    background-color: #d95614;
+    color: #ffffff;
+    border: 0;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.lnb-calendars > div {
+    padding: 12px 16px;
+    border-bottom: 1px solid #e5e5e5;
+    font-weight: normal;
+}
+
+.lnb-calendars-d1 {
+    padding-left: 8px;
+}
+
+.lnb-calendars-d1 label {
+    font-weight: normal;
+}
+
+.lnb-calendars-item {
+    min-height: 14px;
+    line-height: 14px;
+    padding: 8px 0;
+}
+
+.lnb-footer {
+    color: #999;
+    font-size: 11px;
+    position: absolute;
+    bottom: 12px;
+    padding-left: 16px;
+}
+
+#menu {
+    padding: 16px;
+}
+
+#dropdownMenu-calendarType {
+    padding: 0 8px 0 11px;
+}
+
+#calendarTypeName {
+    min-width: 62px;
+    display: inline-block;
+    text-align: left;
+    line-height: 30px;
+}
+
+.move-today {
+    padding: 0 16px;
+    line-height: 30px;
+}
+
+.move-day {
+    padding: 8px;
+    font-size: 0;
+}
+
+#renderRange {
+    padding-left: 12px;
+    font-size: 19px;
+    vertical-align: middle;
+}
+
+.dropdown-menu-title .calendar-icon {
+    margin-right: 8px;
+}
+
+.calendar-bar {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    display: inline-block;
+    border: 1px solid #eee;
+    vertical-align: middle;
+}
+
+.calendar-name {
+    font-size: 14px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.schedule-time {
+    color: #005aff;
+}
+
+#calendar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5px;
+    top: 64px;
+}
+
+/** custom fontawesome */
+.fa {
+    width: 12px;
+    height: 12px;
+    margin-right: 2px;
+}
+
+.weekday-grid-more-schedules {
+    float: right;
+    margin-top: 4px;
+    margin-right: 6px;
+    height: 18px;
+    line-height: 17px;
+    padding: 0 5px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    font-size: 12px;
+    text-align: center;
+    color: #000;
+}
+
+.floatFrame pre {
+    white-space: pre-wrap;
+}
+
+.floatFrame {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background: white;
+    border-radius: 5px;
+    padding: .8em;
+    z-index: 100;
+    width: 40vw;
+    box-shadow: 1px 1px 1px 1px #a2a2a2;
+}
+
+.floatFrame i {
+    float: right;
+    cursor: pointer;
+}
+
+/*.floatFrame::after {
+    content: '\f00d';
+    display: block;
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    cursor: pointer;
+    font-family: "FontAwesome";
+    font-weight: lighter;
+    text-align: center;
+    font-size: large;
+}
+*/
+input {
+    outline: none;
+}
+
+.text-input-field .text-input:focus {
+    padding-bottom: 6px;
+    border-bottom: 2px solid #039be5
+}
+
+.text-input-field .text-input::-ms-input-placeholder,
+.text-input-field .text-input::-webkit-input-placeholder,
+.text-input-field .text-input::-moz-placeholder,
+.text-input-field .text-input::placeholder {
+    color: rgba(0, 0, 0, .42)
+}
+
+.text-input-field .text-input.required {
+    border-left: 4px solid #f44336;
+}
+
+.text-input-field .text-input {
+    border-radius: 2px;
+    font: 14px/20px Roboto Mono, monospace;
+    height: 36px;
+    -webkit-transition: border-color .2s;
+    transition: border-color .2s;
+    width: 100%;
+    background: #fff;
+    padding: 7px 10px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #ebebeb;
+    overflow: visible;
+}
+
+.text-input-field {
+    margin-bottom: 12px;
+}
+
+.text-input-field label {
+    padding-bottom: 2px;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Roboto Mono, monospace;
+    color: #757575;
+    font-weight: 400;
+}
+
+body {
+
+}
+
+.right-panel .panel-group-title {
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.right-panel .panel-subtitle {
+    margin-bottom: 8px;
+}
+
+.right-panel .panel-title {
+    font-size: 34px;
+    font-weight: 300;
+    margin-bottom: 18px;
+}
+
+.right-panel.show {
+    right: 0;
+}
+
+.right-panel .form .mdl-button {
+    float: right;
+}
+
+.right-panel .response-block #status.success {
+    color: #4caf50;
+}
+
+.right-panel pre {
+    background: white;
+    /*padding: 0;*/
+    border: 0;
+}
+
+.right-panel.hide,
+.right-panel {
+    width: 20%;
+    font: 400 16px/24px Roboto, sans-serif;
+    color: #212121;
+    display: none;
+    background: #f1f3f4;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    right: -500px;
+    z-index: 100;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
+    max-height: 100vh;
+    overflow: auto;
+    padding: 32px 16px 12px;
+}
+
+.md-button {
+    color: white;
+    border-radius: 4px;
+}
+
+.text-white {
+    /*color: white !important;*/
+}
+
+.devsite-hide-apix {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 0;
+    background: none;
+}
+
+.devsite-hide-apix:before {
+    content: "close";
+}
+
+.devsite-fullscreen-apix:before {
+    content: "fullscreen"
+}
+
+.devsite-dock-apix:before {
+    content: "fullscreen_exit"
+}
+
+.right-panel .controls {
+    position: absolute;
+    top: 30px;
+    right: 8px;
+}
+
+#show-right-panel{
+    float: right;
+}
+
+.mdl-menu__item{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.mdl-menu__item i.material-icons{
+    margin-inline-end: 8px;
+    margin-right: 8px;
+}

@@ -1,0 +1,48 @@
+<button id="demo-menu-lower-left" class="mdl-button mdl-js-button mdl-button--primary">
+    <span id="calendarTypeName">{{}}</span>
+    <i class="material-icons" id="calendarTypeIcon">&#xE5D4;</i>
+</button>
+
+<ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-left">
+    <div>
+        <li class="mdl-menu__item" ng-repeat="element in $ctrl.dropdownElements" ng-click="$ctrl.changeVisibleRange(element)">
+            <i class="material-icons mdl-list__item-icon">{{ element.icon }}</i>
+            {{ element.type }}
+        </li>
+    </div>
+
+    <li class="mdl-menu__item">
+        <div role="menuitem" data-action="toggle-workweek">
+            <input type="checkbox" class="tui-full-calendar-checkbox-square" value="toggle-workweek" checked>
+            <span class="checkbox-title"></span>Show weekends
+        </div>
+    </li>
+    <li class="mdl-menu__item">
+        <div role="menuitem" data-action="toggle-start-day-1">
+            <input type="checkbox" class="tui-full-calendar-checkbox-square" value="toggle-start-day-1">
+            <span class="checkbox-title"></span>Start Week on Monday
+        </div>
+    </li>
+    <li class="mdl-menu__item">
+        <div role="menuitem" data-action="toggle-narrow-weekend">
+            <input type="checkbox" class="tui-full-calendar-checkbox-square" value="toggle-narrow-weekend">
+            <span class="checkbox-title"></span>Narrower than weekdays
+        </div>
+    </li>
+
+
+</ul>
+<span id="menu-navi">
+    <button class="mdl-button mdl-js-button mdl-button--primary" ng-click="$ctrl.setCurrentDateRange()">Сегодня</button>
+
+    <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--accent" ng-click="$ctrl.previousPeriod()">
+        <i class="material-icons" data-action="move-prev">chevron_left</i>
+    </button>
+
+    <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--accent" ng-click="$ctrl.nextPeriod()">
+        <i class="material-icons" data-action="move-next">chevron_right</i>
+    </button>
+
+    <button class="mdl-button mdl-js-button mdl-button--primary" ng-click="$ctrl.showRightPanel()">Отобразить панель</button>
+</span>
+<span id="renderRange" class="render-range mdl-color-text--cyan-900">{{date}}</span>
