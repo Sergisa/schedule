@@ -3,8 +3,7 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>TOAST UI Calendar App DEMO</title>
-    <link rel="stylesheet" type="text/css"
-          href="//fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://uicdn.toast.com/tui.time-picker/latest/tui-time-picker.css">
@@ -38,7 +37,6 @@
                 Сохранить
             </button>
         </div>
-
     </form>
     <div class="controls">
         <button type="button" id="closeButton" class="devsite-hide-apix button-flat material-icons"></button>
@@ -75,57 +73,7 @@
 <div id="right">
 
     <div id="menu">
-        <!-- Left aligned menu below button -->
-        <!--<button id="demo-menu-lower-left" class="mdl-button mdl-js-button mdl-button--primary">
-            <span id="calendarTypeName"></span>
-            <i class="material-icons" id="calendarTypeIcon">&#xE5D4;</i>
-        </button>
-
-        <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-left">
-            <li class="mdl-menu__item">
-                <i class="material-icons mdl-list__item-icon">calendar_view_day</i>
-                Daily
-            </li>
-            <li class="mdl-menu__item">
-                <i class="material-icons mdl-list__item-icon">calendar_view_week</i>
-                Weekly
-            </li>
-            <li class="mdl-menu__item">
-                <i class="material-icons mdl-list__item-icon">calendar_view_month</i>
-                Month
-            </li>
-            <li class="mdl-menu__item">
-                <i class="material-icons mdl-list__item-icon">horizontal_distribute</i>
-                2weeks
-            </li>
-
-
-            <li class="mdl-menu__item mdl-menu__item--full-bleed-divider">
-                <i class="material-icons mdl-list__item-icon">horizontal_distribute</i>
-                3weeks
-            </li>
-            <li class="mdl-menu__item">
-                <div role="menuitem" data-action="toggle-workweek">
-                    <input type="checkbox" class="tui-full-calendar-checkbox-square" value="toggle-workweek" checked>
-                    <span class="checkbox-title"></span>Show weekends
-                </div>
-            </li>
-            <li class="mdl-menu__item">
-                <div role="menuitem" data-action="toggle-start-day-1">
-                    <input type="checkbox" class="tui-full-calendar-checkbox-square" value="toggle-start-day-1">
-                    <span class="checkbox-title"></span>Start Week on Monday
-                </div>
-            </li>
-            <li class="mdl-menu__item">
-                <div role="menuitem" data-action="toggle-narrow-weekend">
-                    <input type="checkbox" class="tui-full-calendar-checkbox-square" value="toggle-narrow-weekend">
-                    <span class="checkbox-title"></span>Narrower than weekdays
-                </div>
-            </li>
-
-        </ul>-->
         <top-navigation></top-navigation>
-
     </div>
     <div id="calendar"></div>
 </div>
@@ -161,10 +109,6 @@
     }
 
     $(document).ready(function () {
-        /*
-        document.getElementById('show-right-panel').onclick = function () {
-            rightPanel.toggle();
-        }*/
         document.getElementById('closeButton').onclick = function () {
             rightPanel.toggle()
         }

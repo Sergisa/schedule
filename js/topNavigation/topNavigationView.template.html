@@ -4,12 +4,10 @@
 </button>
 
 <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-left">
-    <div>
-        <li class="mdl-menu__item" ng-repeat="element in $ctrl.dropdownElements" ng-click="$ctrl.changeVisibleRange(element)">
-            <i class="material-icons mdl-list__item-icon">{{ element.icon }}</i>
-            {{ element.type }}
-        </li>
-    </div>
+    <li class="mdl-menu__item" ng-repeat="element in $ctrl.dropdownElements" ng-click="$ctrl.changeVisibleRange(element)">
+        <i class="material-icons mdl-list__item-icon">{{ element.icon }}</i>
+        {{ element.type }}
+    </li>
 
     <li class="mdl-menu__item">
         <div role="menuitem" data-action="toggle-workweek">

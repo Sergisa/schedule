@@ -1,17 +1,17 @@
 // Client ID and API key from the Developer Console
-var CLIENT_ID = '156793893346-tjm035jhgc7oercda9s52pmskl1ihnk0.apps.googleusercontent.com';
-var API_KEY = 'AIzaSyBFbSbYVGwIq_T-w5Gc3fmsIIm8-7kR_ik';
+const CLIENT_ID = '156793893346-tjm035jhgc7oercda9s52pmskl1ihnk0.apps.googleusercontent.com';
+const API_KEY = 'AIzaSyBFbSbYVGwIq_T-w5Gc3fmsIIm8-7kR_ik';
 
 // Array of API discovery doc URLs for APIs used by the quickstart
-var DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"];
+const DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"];
 
 // Authorization scopes required by the API; multiple scopes can be
 // included, separated by spaces.
-var SCOPES = "https://www.googleapis.com/auth/calendar.readonly";
+const SCOPES = "https://www.googleapis.com/auth/calendar.readonly";
 
-var statusBlock = document.getElementById('status');
-var authorizeButton = document.getElementById('authorize_button');
-var signoutButton = document.getElementById('signout_button');
+const statusBlock = document.getElementById('status');
+const authorizeButton = document.getElementById('authorize_button');
+const signoutButton = document.getElementById('signout_button');
 
 /**
  *  On load, called to load the auth2 library and API client library.
@@ -79,8 +79,8 @@ function handleSignoutClick(event) {
  * @param {string} message Text to be placed in pre element.
  */
 function appendPre(message) {
-    var pre = document.getElementById('content');
-    var textContent = document.createTextNode(message + '\n');
+    const pre = document.getElementById('content');
+    const textContent = document.createTextNode(message + '\n');
     pre.appendChild(textContent);
 }
 
@@ -103,7 +103,7 @@ function listUpcomingEvents() {
         'maxResults': 10,
         'orderBy': 'startTime'
     }).then(function(response) {
-        var events = response.result.items;
+        const events = response.result.items;
         appendPre('Upcoming events:');
         statusBlock.innerHTML = `${response.status} ${response.statusText}`;
         if(response.status === 200){
@@ -111,8 +111,8 @@ function listUpcomingEvents() {
         }
         if (events.length > 0) {
             for (i = 0; i < events.length; i++) {
-                var event = events[i];
-                var when = event.start.dateTime;
+                const event = events[i];
+                let when = event.start.dateTime;
                 if (!when) {
                     when = event.start.date;
                 }
