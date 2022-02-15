@@ -33,7 +33,7 @@ function setDropdownCalendarType(type, options) {
 }
 
 calendarApp.component('topNavigation', {
-    templateUrl: 'js/topNavigation/topNavigationView.html',
+    templateUrl: 'js/topNavigation/topNavigationView.template.html',
     controller: function CalendarListController($scope, $element, $attrs) {
         let type = cal.getViewName();
         const options = cal.getOptions();
