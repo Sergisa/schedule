@@ -38,7 +38,7 @@ function initClient() {
         updateSigninStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
         authorizeButton.onclick = handleAuthClick;
         signoutButton.onclick = handleSignoutClick;
-    }, function(error) {
+    }, function (error) {
         appendPre(JSON.stringify(error, null, 2));
     });
 }
@@ -91,7 +91,7 @@ function appendPre(message) {
  */
 function listUpcomingEvents() {
     gapi.client.calendar.calendarList.list({
-        "showHidden":true
+        "showHidden": true
     }).then(function (response) {
         console.log(response)
     })
@@ -102,11 +102,11 @@ function listUpcomingEvents() {
         'singleEvents': true,
         'maxResults': 10,
         'orderBy': 'startTime'
-    }).then(function(response) {
+    }).then(function (response) {
         const events = response.result.items;
         appendPre('Upcoming events:');
         statusBlock.innerHTML = `${response.status} ${response.statusText}`;
-        if(response.status === 200){
+        if (response.status === 200) {
             statusBlock.classList.add('success');
         }
         if (events.length > 0) {
@@ -125,7 +125,7 @@ function listUpcomingEvents() {
 }
 
 $(document).ready(function () {
-    $('#login').on('click', function(e){
+    $('#login').on('click', function (e) {
 
     })
 })

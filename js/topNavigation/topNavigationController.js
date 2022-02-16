@@ -76,24 +76,24 @@ calendarApp.component('topNavigation', {
 
             this.dropdownElements = [{
                 type: 'daily',
-                icon:'calendar_view_day',
-                selected:false
-            },{
+                icon: 'calendar_view_day',
+                selected: false
+            }, {
                 type: 'week',
-                icon:'calendar_view_week',
-                selected:false
-            },{
+                icon: 'calendar_view_week',
+                selected: false
+            }, {
                 type: 'Monthly',
-                icon:'calendar_view_month',
-                selected:false
-            },{
+                icon: 'calendar_view_month',
+                selected: false
+            }, {
                 type: '2 weeks',
-                icon:'horizontal_distribute',
-                selected:false
-            },{
+                icon: 'horizontal_distribute',
+                selected: false
+            }, {
                 type: '3 weeks',
-                icon:'horizontal_distribute',
-                selected:false
+                icon: 'horizontal_distribute',
+                selected: false
             }]
 
 
@@ -101,7 +101,7 @@ calendarApp.component('topNavigation', {
         this.showRightPanel = function ($ev) {
             rightPanel.toggle();
         }
-        this.changeVisibleRange = function(source){
+        this.changeVisibleRange = function (source) {
             console.log("changeVisibleRange", source)
         }
     }

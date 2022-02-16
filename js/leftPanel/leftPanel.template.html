@@ -1,26 +1,32 @@
-<div ng-if="useCreationPopup" class="lnb-new-schedule">
-    <button id="btn-new-schedule" class="mdl-button mdl-js-button mdl-button--primary" data-toggle="modal">
-        <i class="material-icons">add</i>
-        добавить
-    </button>
-</div>
-<div id="lnb-calendars" class="lnb-calendars">
-    <div>
-        <div class="lnb-calendars-item">
-            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect mdl-typography--font-thin" for="view-all">
-                <input type="checkbox" value="all" class="mdl-checkbox__input" id="view-all" checked>
-                <span class="mdl-checkbox__label">Все календари</span>
-            </label>
+<div id="lnb" ng-controller="LeftPanelController as ctrl">
+    <div class="lnb-new-schedule" ng-if="useCreationPopup">
+        <button class="mdl-button mdl-js-button mdl-button--primary" data-toggle="modal" id="btn-new-schedule">
+            <i class="material-icons">add</i>
+            добавить
+        </button>
+    </div>
+    <div class="lnb-calendars" id="lnb-calendars">
+        <div>
+            <div class="lnb-calendars-item">
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect mdl-typography--font-thin" for="view-all">
+                    <input checked class="mdl-checkbox__input" id="view-all" type="checkbox" value="all">
+                    <span class="mdl-checkbox__label">Все календари</span>
+                </label>
+            </div>
+        </div>
+        <div class="lnb-calendars-d1" id="calendarList">
+            <calendar-list></calendar-list>
+        </div>
+        <div>
+            <button class="mdl-button mdl-js-button mdl-button--primary" id="authorize_button" ng-click="ctrl.handleAuthClick($event)" ng-show="!isSignedIn">
+                Login
+            </button>
+            <button class="mdl-button mdl-js-button mdl-button--primary" id="signout_button" ng-click="ctrl.handleSignOutClick($event)" ng-show="isSignedIn">
+                Sign out
+            </button>
         </div>
     </div>
-    <div id="calendarList" class="lnb-calendars-d1">
-        <calendar-list></calendar-list>
+    <div class="lnb-footer">
+        © Sergisa
     </div>
-    <div>
-        <button class="mdl-button mdl-js-button mdl-button--primary" id="authorize_button">Login</button>
-        <button class="mdl-button mdl-js-button mdl-button--primary" id="signout_button" disabled>Sign out</button>
-    </div>
-</div>
-<div class="lnb-footer">
-    © Sergisa
 </div>

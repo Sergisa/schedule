@@ -17,5 +17,6 @@
     <orderEntry type="library" name="material" level="application" />
     <orderEntry type="library" name="jquery-3.6.0" level="application" />
     <orderEntry type="library" name="api" level="application" />
+    <orderEntry type="library" name="angular-resource" level="application" />
   </component>
 </module>

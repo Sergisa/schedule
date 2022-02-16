@@ -84,11 +84,12 @@ function generateScheduleForTimetable(timetable, calendar) {
 
     ScheduleList.push(schedule);
 }
+
 function generateSchedule(viewName, renderStart, renderEnd) {
     ScheduleList = [];
-    Timetable=[]
+    Timetable = []
 
-    CalendarList.forEach(function(calendar) {
+    CalendarList.forEach(function (calendar) {
         let i = 0, length = 10;
         if (viewName === 'month') {
             length = 3;

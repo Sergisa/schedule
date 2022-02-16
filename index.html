@@ -11,10 +11,11 @@
     <link rel="stylesheet" type="text/css" href="css/tui-calendar.min.css">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.light_blue-indigo.min.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-resource.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/default.css">
 
 </head>
-<body ng-controller="LeftPanelController">
+<body>
 <div class="right-panel show" id="rightPanel">
     <div class="panel-title">Управление</div>
     <div class="panel-subtitle">Наверное здесь будет когда-нибудь полезный список но это не факт</div>
@@ -42,9 +43,9 @@
         <button type="button" id="closeButton" class="devsite-hide-apix button-flat material-icons"></button>
     </div>
 </div>
-<div id="lnb">
-    <left-panel></left-panel>
-</div>
+
+<left-panel></left-panel>
+
 <div id="right">
     <div id="menu">
         <top-navigation></top-navigation>
@@ -61,19 +62,20 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/chance/1.0.13/chance.min.js"></script>
 <script src="https://uicdn.toast.com/tui-calendar/latest/tui-calendar.js"></script>
-<script async defer src="https://apis.google.com/js/api.js"
-        onload="this.onload=function(){};handleClientLoad()"
-        onreadystatechange="if (this.readyState === 'complete') this.onload()">
-</script>
+<script src="https://apis.google.com/js/api.js"></script>
 <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 <script src="js/calendars.js"></script>
 <script src="js/schedules.js"></script>
 <script src="js/dooray.js"></script>
 <script src="js/app.js"></script>
-<script src="js/googleCalendar.js"></script>
+<!--<script src="js/googleCalendar.js"></script>-->
 <script>
     const calendarApp = angular.module('calendarApp', []);
+    window.calendarApp = calendarApp;
 </script>
+<script src="js/googleClientProvider.js"></script>
+<script src="js/apiService.js"></script>
+<script src="js/authService.js"></script>
 <script src="js/calendarList/leftPanelController.js"></script>
 <script src="js/calendarList/calendarListComponent.js"></script>
 <script src="js/topNavigation/topNavigationController.js"></script>

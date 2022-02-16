@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{@types/angular, @types/angular-animate, @types/angular-aria, @types/angular-material, angular, api, jquery-3.6.0, material, moment.js, tui-calendar, tui-code-snippet, tui-date-picker, tui-time-picker}" />
+    <file url="PROJECT" libraries="{@types/angular, @types/angular-animate, @types/angular-aria, @types/angular-material, angular, angular-resource, api, jquery-3.6.0, material, moment.js, tui-calendar, tui-code-snippet, tui-date-picker, tui-time-picker}" />
   </component>
 </project>

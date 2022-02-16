@@ -9,6 +9,13 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="timetable.sergisa">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/www/timetable.sergisa.ru" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
     </serverData>
   </component>
 </project>
